@@ -1,0 +1,12 @@
+{
+  "name": "streamgrid-m3u8-cloudflare",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Cloudflare Workers hosted M3U8 multi-view player and TV receiver",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
