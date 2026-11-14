@@ -1,0 +1,12 @@
+{
+  "name": "m3u8-multiview-player",
+  "version": "0.2.0",
+  "private": true,
+  "description": "跨平台 M3U8 多画面播放器与局域网投屏接收端",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

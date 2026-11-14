@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05080f"><link rel="stylesheet" href="/styles.css">
+  <title>电视接收端 · STREAMGRID</title>
+</head>
+<body class="receiver-body">
+  <main class="receiver-shell">
+    <header class="receiver-header"><div class="brand"><div class="brand-mark">M<span>3</span></div><div><div class="brand-title">STREAM<span>GRID</span></div><div class="brand-sub">TV RECEIVER</div></div></div><div class="receiver-status" id="receiverStatus"><i></i> 等待连接</div></header>
+    <section class="receiver-pair" id="pairPanel">
+      <div class="eyebrow">LOCAL NETWORK RECEIVER</div><h1>连接手机播放器</h1><p>请在手机播放器的「局域网投屏」窗口中获取6位配对码，然后在此输入。</p>
+      <form id="pairForm" class="pair-form"><input id="pairInput" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="输入 6 位投屏码" required><button class="btn btn-primary" type="submit">连接设备</button></form>
+      <div class="receiver-help">请确认电视与手机连接同一个 WiFi，并访问同一局域网地址。</div>
+    </section>
+    <section class="receiver-view" id="receiverView" hidden>
+      <div class="receiver-title"><div><span class="live-dot"></span><b>正在接收播放</b><small id="receiverCode"></small></div><button class="btn btn-outline" id="receiverDisconnect">断开</button></div>
+      <div class="video-grid grid-4" id="receiverGrid"></div>
+      <div class="receiver-controls"><span id="receiverHint">播放由手机端控制</span><button class="btn btn-outline" id="receiverFullscreen">全屏显示</button></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"></script>
+  <script src="/player.js"></script><script src="/receiver.js"></script>
+</body>
+</html>
